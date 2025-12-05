@@ -15,27 +15,20 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.fishingmaster.lure"
+      "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#0f172a"
       },
-      "package": "com.fishingmaster.lure",
-      "versionCode": 1,
-      "permissions": [
-        "VIBRATE"
-      ]
+      "package": "com.fishingmaster.lure"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
-      "expo-splash-screen",
-      "expo-font"
-    ],
-    "scheme": "lure-fishing-master"
+      "expo-splash-screen"
+    ]
   }
 }
