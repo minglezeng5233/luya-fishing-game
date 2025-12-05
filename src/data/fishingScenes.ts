@@ -1,0 +1,58 @@
+import { FishingScene } from '../types';
+
+export const FISHING_SCENES: FishingScene[] = [
+  {
+    id: 'lake',
+    name: '宁静湖泊',
+    type: 'freshwater',
+    difficulty: 1,
+    unlockCost: 0,
+    description: '平静的湖泊，适合新手练习',
+    colorGradient: ['#4a90e2', '#2e5c8a', '#1a365d'],
+    commonFish: [1, 2],
+    rareFish: [3, 4],
+    legendaryFish: [5],
+    weatherEffects: {
+      sunny: { biteRate: 1.0, difficulty: 1.0 },
+      rainy: { biteRate: 1.3, difficulty: 0.9 },
+      windy: { biteRate: 0.8, difficulty: 1.2 },
+      storm: { biteRate: 1.5, difficulty: 1.5 },
+    },
+  },
+  {
+    id: 'river',
+    name: '急流河川',
+    type: 'freshwater',
+    difficulty: 2,
+    unlockCost: 500,
+    description: '流速较快的河流，挑战性更高',
+    colorGradient: ['#63b3ed', '#3182ce', '#2c5282'],
+    commonFish: [1, 2, 3],
+    rareFish: [4],
+    legendaryFish: [5],
+    weatherEffects: {
+      sunny: { biteRate: 0.9, difficulty: 1.1 },
+      rainy: { biteRate: 1.4, difficulty: 1.0 },
+      windy: { biteRate: 0.7, difficulty: 1.3 },
+      storm: { biteRate: 1.6, difficulty: 1.6 },
+    },
+  },
+  {
+    id: 'ocean',
+    name: '深海渔场',
+    type: 'saltwater',
+    difficulty: 3,
+    unlockCost: 2000,
+    description: '广阔的海洋，大型鱼类出没',
+    colorGradient: ['#4299e1', '#2b6cb0', '#2d3748'],
+    commonFish: [6],
+    rareFish: [7],
+    legendaryFish: [8],
+    weatherEffects: {
+      sunny: { biteRate: 1.1, difficulty: 1.2 },
+      rainy: { biteRate: 1.2, difficulty: 1.1 },
+      windy: { biteRate: 0.9, difficulty: 1.4 },
+      storm: { biteRate: 1.7, difficulty: 1.8 },
+    },
+  },
+];
